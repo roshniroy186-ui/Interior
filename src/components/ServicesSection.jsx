@@ -79,9 +79,9 @@ function ServicesSection() {
                 {service.text}
               </p>
 
-              <a href="/consultation">
+              <Link to="/consultation">
                 Explore Service →
-              </a>
+              </Link>
 
             </div>
 
