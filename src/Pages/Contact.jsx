@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
+
 function Contact() {
   return (
     <main className="contact-page">
 
       {/* HEADER */}
 
-      <section className="contact-header">
+      <section className="contact-header inner-page-hero">
 
         <p className="section-label">
           CONTACT US
@@ -82,7 +84,7 @@ function Contact() {
               EMAIL
             </span>
 
-            <a href="devsahani8090@gmail.com">
+            <a href="mailto:devsahani8090@gmail.com">
               devsahani8090@gmail.com
             </a>
 
@@ -144,9 +146,9 @@ function Contact() {
             your interior.
           </p>
 
-          <a href="/consultation">
+          <Link to="/consultation">
             Book Free Consultation →
-          </a>
+          </Link>
 
         </div>
 

@@ -2,93 +2,94 @@ const testimonials = [
   {
     name: "Rahul Sharma",
     location: "Noida",
-    text: "The team completely transformed our apartment. The design was beautiful and the entire process was very smooth.",
+    text:
+      "The team completely transformed our apartment. The design was beautiful and the entire process was very smooth.",
     image: `${import.meta.env.BASE_URL}project-living-room.JPG`,
   },
   {
     name: "Priya Verma",
     location: "Greater Noida",
-    text: "We loved the design of our living room and kitchen. The team understood exactly what we wanted.",
+    text:
+      "We loved the design of our living room and kitchen. The team understood exactly what we wanted.",
     image: `${import.meta.env.BASE_URL}project-bedroom.JPG`,
   },
   {
     name: "Amit Singh",
     location: "Delhi NCR",
-    text: "Very professional team and excellent quality of work. Our home now feels completely different.",
+    text:
+      "Very professional team and excellent quality of work. Our home now feels completely different.",
     image: `${import.meta.env.BASE_URL}project-kitchen.JPG`,
   },
 ];
 
-function Testimonials() {
+function TestimonialsSection({ showHeading = true }) {
   return (
-    <main className="testimonials-page">
+    <section className="testimonials-section">
 
-      {/* Hero */}
-      <section className="inner-page-hero testimonials-hero">
+      {showHeading && (
+        <div className="testimonials-heading">
 
-        <p className="section-label">
-          TESTIMONIALS
-        </p>
+          <div>
+            <p className="section-label">
+              TESTIMONIALS
+            </p>
 
-        <h1>
-          What Our Clients
-          <br />
-          <span>Say.</span>
-        </h1>
+            <h2>
+              What Our Clients
+              <br />
+              Say.
+            </h2>
+          </div>
 
-        <p>
-          Real experiences from our interior design clients.
-        </p>
+          <p>
+            Real experiences from our interior design clients.
+          </p>
 
-      </section>
+        </div>
+      )}
 
-      {/* Testimonials */}
-      <section className="testimonials-page-grid">
+      <div className="testimonials-grid">
 
         {testimonials.map((testimonial) => (
 
-          <div
+          <article
             className="testimonial-card"
             key={testimonial.name}
           >
 
-            {/* Client Image */}
             <div className="testimonial-image-wrapper">
               <img
                 src={testimonial.image}
                 alt={testimonial.name}
                 className="testimonial-image"
+                loading="lazy"
               />
             </div>
 
-            {/* Stars */}
             <div className="testimonial-stars">
               ★★★★★
             </div>
 
-            {/* Review */}
             <p className="testimonial-text">
               "{testimonial.text}"
             </p>
 
-            {/* Client Name */}
             <strong>
               {testimonial.name}
             </strong>
 
-            {/* Location */}
             <span className="testimonial-location">
-              📍 {testimonial.location}
+              {testimonial.location}
             </span>
 
-          </div>
+          </article>
 
         ))}
 
-      </section>
+      </div>
 
-    </main>
+    </section>
   );
 }
 
-export default Testimonials;
+export default TestimonialsSection;

@@ -54,7 +54,7 @@ function Portfolio() {
 
         <div className="portfolio-hero-content">
 
-          <p className="portfolio-label">
+          <p className="section-label">
             OUR PORTFOLIO
           </p>
 
@@ -81,7 +81,7 @@ function Portfolio() {
         <div className="portfolio-heading">
 
           <div>
-            <p className="portfolio-label">
+            <p className="section-label">
               SELECTED PROJECTS
             </p>
 
