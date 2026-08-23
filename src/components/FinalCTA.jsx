@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function FinalCTA() {
   return (
     <section className="final-cta">
@@ -21,12 +23,12 @@ function FinalCTA() {
 
         <div className="final-cta-buttons">
 
-          <a
-            href="/consultation"
+          <Link
+            to="/consultation"
             className="final-cta-primary"
           >
             Book Free Consultation →
-          </a>
+          </Link>
 
           <a
             href="tel:+919999999999"

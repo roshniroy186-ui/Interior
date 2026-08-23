@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const projects = [
   {
     id: 1,
@@ -56,39 +58,37 @@ function ProjectsSection() {
 
         {projects.map((project) => (
 
-          <div
+          <article
             className="project-card"
             key={project.id}
           >
 
-            <div className="project-image">
+            <Link
+              to={`/portfolio/${project.id}`}
+              className="project-image"
+            >
 
               <img
                 src={project.image}
                 alt={project.title}
+                loading="lazy"
               />
 
-            </div>
+            </Link>
 
             <div className="project-info">
 
-              <p>
-                {project.category}
-              </p>
+              <p>{project.category}</p>
 
-              <h3>
-                {project.title}
-              </h3>
+              <h3>{project.title}</h3>
 
-              <a
-                href={`/portfolio/${project.id}`}
-              >
+              <Link to={`/portfolio/${project.id}`}>
                 View Project →
-              </a>
+              </Link>
 
             </div>
 
-          </div>
+          </article>
 
         ))}
 
@@ -96,9 +96,9 @@ function ProjectsSection() {
 
       <div className="projects-button">
 
-        <a href="/portfolio">
+        <Link to="/portfolio">
           View All Projects →
-        </a>
+        </Link>
 
       </div>
 

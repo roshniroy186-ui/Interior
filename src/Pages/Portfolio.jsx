@@ -24,8 +24,7 @@ import { Link } from "react-router-dom";
     title: "Complete 3BHK Interior",
     description:
       "A complete home interior designed with a consistent and timeless visual language.",
-    image:
-      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1400&q=85",
+    image: `${import.meta.env.BASE_URL}Full.House.jpg`,
   },
   {
     id: 5,
@@ -33,8 +32,7 @@ import { Link } from "react-router-dom";
     title: "Premium Apartment Interior",
     description:
       "A sophisticated apartment designed to make every part of the space feel intentional.",
-    image:
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=85",
+    image: `${import.meta.env.BASE_URL}Apartment.jpg`,
   },
   {
     id: 6,
@@ -42,8 +40,7 @@ import { Link } from "react-router-dom";
     title: "Contemporary Home",
     description:
       "A contemporary home balancing functionality, comfort and refined design.",
-    image:
-      "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1400&q=85",
+    image: `${import.meta.env.BASE_URL}project-living-room%20copy.jpg`,
   },
 ];
 
