@@ -3,74 +3,90 @@ function WhyChooseUs() {
     {
       number: "01",
       title: "Personalised Design",
-      description:
-        "Every project is designed around your lifestyle, taste and requirements.",
+      text: "Every project is designed around your lifestyle, taste and requirements.",
+      image: `${import.meta.env.BASE_URL}Personal Design.jpg`,
     },
     {
       number: "02",
       title: "Quality Materials",
-      description:
-        "We focus on reliable materials and finishes that look beautiful and last longer.",
+      text: "We focus on reliable materials and finishes that look beautiful and last longer.",
+      image: `${import.meta.env.BASE_URL}quality Material.jpg`,
     },
     {
       number: "03",
       title: "Experienced Team",
-      description:
-        "Our design and execution team works together to deliver your project professionally.",
+      text: "Our design and execution team works together to deliver your project professionally.",
+      image: `${import.meta.env.BASE_URL}Experience.Team.jpg`,
     },
     {
       number: "04",
       title: "Complete Execution",
-      description:
-        "From design to final installation, we manage the complete interior process.",
+      text: "From design to final installation, we manage the complete interior process.",
+      image: `${import.meta.env.BASE_URL}Complete.Execution.jpg`,
     },
   ];
 
   return (
     <section className="why-section">
 
-      <div className="why-header">
+      <div className="why-heading">
 
-        <p className="section-label">
-          WHY CHOOSE US
-        </p>
+        <div>
+          <p className="section-label">
+            WHY CHOOSE US
+          </p>
 
-        <h2>
-          Designed With
-          <br />
-          Purpose.
-        </h2>
+          <h2>
+            Designed With
+            <br />
+            Purpose.
+          </h2>
+        </div>
 
         <p>
-          We believe great interiors are not just
-          beautiful. They should also make everyday
-          life easier and more comfortable.
+          We believe great interiors are not just beautiful.
+          They should also make everyday life easier and
+          more comfortable.
         </p>
 
       </div>
+
 
       <div className="why-grid">
 
         {features.map((feature) => (
 
-          <div
+          <article
             className="why-card"
             key={feature.number}
           >
 
-            <span>
-              {feature.number}
-            </span>
+            <div className="why-image">
 
-            <h3>
-              {feature.title}
-            </h3>
+              <img
+                src={feature.image}
+                alt={feature.title}
+              />
 
-            <p>
-              {feature.description}
-            </p>
+            </div>
 
-          </div>
+            <div className="why-content">
+
+              <span className="why-number">
+                {feature.number}
+              </span>
+
+              <h3>
+                {feature.title}
+              </h3>
+
+              <p>
+                {feature.text}
+              </p>
+
+            </div>
+
+          </article>
 
         ))}
 

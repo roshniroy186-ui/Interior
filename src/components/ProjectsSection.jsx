@@ -1,39 +1,27 @@
 const projects = [
   {
     id: 1,
-    title: "Modern Luxury Living Room",
-    category: "Living Room",
-    image: "/project-living-room.jpg",
+    category: "LIVING ROOM",
+    title: "Modern Living Room",
+    image: `${import.meta.env.BASE_URL}project-living-room.JPG`,
   },
   {
     id: 2,
+    category: "BEDROOM",
     title: "Minimal Bedroom",
-    category: "Bedroom",
-    image: "/project-bedroom.jpg",
+    image: `${import.meta.env.BASE_URL}project-bedroom.JPG`,
   },
   {
     id: 3,
+    category: "KITCHEN",
     title: "Modern Modular Kitchen",
-    category: "Kitchen",
-    image: "/project-kitchen.jpg",
+    image: `${import.meta.env.BASE_URL}project-kitchen.JPG`,
   },
   {
     id: 4,
-    title: "Complete 3BHK Interior",
-    category: "Full Home",
-    image: "/project-full-home.jpg",
-  },
-  {
-    id: 5,
-    title: "Premium Apartment Interior",
-    category: "Apartment",
-    image: "/project-apartment.jpg",
-  },
-  {
-    id: 6,
-    title: "Contemporary Home",
-    category: "Full Home",
-    image: "/project-home.jpg",
+    category: "LIVING ROOM",
+    title: "Contemporary Living Room",
+    image: `${import.meta.env.BASE_URL}project-living-room%20copy.jpg`,
   },
 ];
 

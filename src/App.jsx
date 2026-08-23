@@ -18,7 +18,7 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <BrowserRouter>
+  <BrowserRouter basename="/interior-design">
 
       <Navbar />
 

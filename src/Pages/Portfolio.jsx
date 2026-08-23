@@ -1,32 +1,22 @@
 import { Link } from "react-router-dom";
-
-const projects = [
+  const projects = [
   {
     id: 1,
     category: "LIVING ROOM",
     title: "Modern Luxury Living Room",
-    description:
-      "A warm and elegant living space designed for comfort and everyday living.",
-    image:
-      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1400&q=85",
+    image: `${import.meta.env.BASE_URL}project-living-room.JPG`,
   },
   {
     id: 2,
     category: "BEDROOM",
     title: "Minimal Bedroom",
-    description:
-      "A calm bedroom combining soft colours, smart storage and modern details.",
-    image:
-      "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1400&q=85",
+    image: `${import.meta.env.BASE_URL}project-bedroom.JPG`,
   },
   {
     id: 3,
     category: "KITCHEN",
     title: "Modern Modular Kitchen",
-    description:
-      "A functional kitchen with clean lines, practical storage and elegant finishes.",
-    image:
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=85",
+    image: `${import.meta.env.BASE_URL}project-kitchen.JPG`,
   },
   {
     id: 4,

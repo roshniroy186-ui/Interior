@@ -49,7 +49,7 @@ function Contact() {
             </span>
 
             <a href="tel:+919999999999">
-              +91 99999 99999
+              +91 9559590289
             </a>
 
           </div>
@@ -64,7 +64,7 @@ function Contact() {
             </span>
 
             <a
-              href="https://wa.me/919999999999"
+              href="https://wa.me/919559590289"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -82,8 +82,8 @@ function Contact() {
               EMAIL
             </span>
 
-            <a href="mailto:info@example.com">
-              info@example.com
+            <a href="devsahani8090@gmail.com">
+              devsahani8090@gmail.com
             </a>
 
           </div>

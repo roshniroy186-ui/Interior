@@ -7,21 +7,27 @@ import FinalCTA from "../components/FinalCTA";
 
 function Home() {
   return (
-    <div>
+    <main className="home-page">
 
+      {/* Hero Section */}
       <Hero />
 
+      {/* About Section */}
       <AboutSection />
 
+      {/* Services Section */}
       <ServicesSection />
 
+      {/* Portfolio / Projects */}
       <ProjectsSection />
 
+      {/* Client Testimonials */}
       <TestimonialsSection />
 
+      {/* Final Call To Action */}
       <FinalCTA />
 
-    </div>
+    </main>
   );
 }
 

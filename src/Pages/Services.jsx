@@ -21,8 +21,9 @@ function Services() {
           </h1>
 
           <p>
-            From individual rooms to complete homes
-            and apartments, we create interiors designed
+            From individual rooms
+            to complete homes and apartments,
+            we create interiors designed
             around the way you live.
           </p>
 

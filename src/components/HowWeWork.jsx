@@ -1,59 +1,81 @@
 function HowWeWork() {
+  const steps = [
+    {
+      number: "01",
+      title: "Consultation",
+      text: "We understand your requirements, lifestyle and design preferences.",
+      image: `${import.meta.env.BASE_URL}Consultation.jpg`,
+    },
+    {
+      number: "02",
+      title: "Design",
+      text: "Our designers create a personalised interior concept for your home.",
+      image: `${import.meta.env.BASE_URL}Design.jpg`,
+    },
+    {
+      number: "03",
+      title: "Execution",
+      text: "Our team manages the execution and brings your interior design to life.",
+      image: `${import.meta.env.BASE_URL}Execution.jpg`,
+    },
+  ];
+
   return (
-    <section className="how-we-work">
+    <section className="how-section">
 
-      <p className="section-label">
-        HOW WE WORK
-      </p>
+      <div className="how-heading">
 
-      <h2>
-        Simple Process.
-        <br />
-        Beautiful Results.
-      </h2>
+        <p className="section-label">
+          HOW WE WORK
+        </p>
 
-      <div className="how-we-work-grid">
+        <h2>
+          Simple Process.
+          <br />
+          Beautiful Results.
+        </h2>
 
-        <div>
-          <span>01</span>
-
-          <h3>
-            Consultation
-          </h3>
-
-          <p>
-            We understand your requirements,
-            lifestyle and design preferences.
-          </p>
-        </div>
+      </div>
 
 
-        <div>
-          <span>02</span>
+      <div className="how-grid">
 
-          <h3>
-            Design
-          </h3>
+        {steps.map((step) => (
 
-          <p>
-            Our designers create a personalised
-            interior concept for your home.
-          </p>
-        </div>
+          <article
+            className="how-card"
+            key={step.number}
+          >
+
+            <div className="how-image">
+
+              <img
+                src={step.image}
+                alt={step.title}
+              />
+
+              <span>
+                {step.number}
+              </span>
+
+            </div>
 
 
-        <div>
-          <span>03</span>
+            <div className="how-content">
 
-          <h3>
-            Execution
-          </h3>
+              <h3>
+                {step.title}
+              </h3>
 
-          <p>
-            Our team manages the execution and
-            brings your interior design to life.
-          </p>
-        </div>
+              <p>
+                {step.text}
+              </p>
+
+            </div>
+
+          </article>
+
+        ))}
 
       </div>
 
