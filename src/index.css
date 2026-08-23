@@ -1997,393 +1997,316 @@
 
 .consultation-page {
   min-height: 100vh;
-  background: #000;
-  color: #fff;
-  padding-bottom: 100px;
+  background: #f7f5ec;
+  color: #25271f;
 }
-
-
-/* =========================================
-   HEADER
-========================================= */
 
 .consultation-header {
-  max-width: 850px;
-  margin: 0 auto;
-  padding: 100px 20px 60px;
-  text-align: center;
-}
-
-.consultation-header .section-label {
-  color: #2196ff;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 4px;
-  margin-bottom: 18px;
+  padding-bottom: 80px;
 }
 
 .consultation-header h1 {
-  margin: 0 0 25px;
-
-  font-size: 58px;
-  line-height: 1.1;
-  font-weight: 700;
-
-  color: #fff;
-}
-
-.consultation-header h1 br + * {
-  color: #2196ff;
+  margin: 0 0 24px;
+  font-size: clamp(52px, 8vw, 96px);
+  line-height: 0.92;
+  font-weight: 500;
+  letter-spacing: -2px;
+  color: #25271f;
+  position: relative;
+  z-index: 2;
 }
 
 .consultation-header > p:last-child {
-  max-width: 650px;
-  margin: 0 auto;
-
-  color: #9ca3af;
-
-  font-size: 17px;
+  max-width: 580px;
+  margin: 0;
+  color: #62645b;
+  font-size: 18px;
   line-height: 1.8;
-}
-
-
-/* =========================================
-   FORM SECTION
-========================================= */
-
-.consultation-form-section {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-
-/* =========================================
-   FORM
-========================================= */
-
-.consultation-form {
-  display: grid;
-
-  grid-template-columns: repeat(2, 1fr);
-
-  gap: 25px;
-
-  padding: 45px;
-
-  background: #0a0a0a;
-
-  border: 1px solid #1c1c1c;
-
-  border-radius: 20px;
-
-  box-shadow:
-    0 20px 60px rgba(0, 0, 0, 0.7);
-
   position: relative;
-
-  overflow: hidden;
+  z-index: 2;
 }
 
-
-/* Blue top line */
-
-.consultation-form::before {
-  content: "";
-
-  position: absolute;
-
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 4px;
-
-  background: #2196ff;
-
-  box-shadow:
-    0 0 20px rgba(33, 150, 255, 0.7);
+.consultation-body {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 7% 120px;
 }
 
-
-/* =========================================
-   FORM GROUP
-========================================= */
-
-.form-group {
-  display: flex;
-
-  flex-direction: column;
-
-  gap: 9px;
+.consultation-layout {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 28px;
+  align-items: start;
 }
 
+.consultation-sidebar {
+  padding: 36px 32px;
+  background: #ffffff;
+  border: 1px solid #d2ccb9;
+  border-radius: 16px;
+  box-shadow: 0 16px 48px rgba(70, 75, 55, 0.08);
+  position: sticky;
+  top: 100px;
+}
 
-/* =========================================
-   LABEL
-========================================= */
+.consultation-sidebar h2 {
+  margin: 0 0 24px;
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  color: #25271f;
+}
 
-.form-group label {
-  color: #e5e7eb;
+.consultation-benefits {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
+.consultation-benefits li {
+  padding: 20px 0;
+  border-top: 1px solid #e8e3d5;
+}
+
+.consultation-benefits li:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.consultation-benefits strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #25271f;
+}
+
+.consultation-benefits span {
+  display: block;
+  color: #62645b;
   font-size: 14px;
-
-  font-weight: 600;
+  line-height: 1.7;
 }
 
+.consultation-quick-contact {
+  margin-top: 28px;
+  padding-top: 28px;
+  border-top: 1px solid #e8e3d5;
+}
 
-/* =========================================
-   INPUT + SELECT + TEXTAREA
-========================================= */
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-  width: 100%;
-
-  box-sizing: border-box;
-
-  background: #111;
-
-  color: #fff;
-
-  border: 1px solid #292929;
-
-  border-radius: 10px;
-
-  padding: 14px 16px;
-
+.consultation-quick-contact > p {
+  margin: 0 0 16px;
+  color: #62645b;
   font-size: 15px;
-
-  outline: none;
-
-  transition:
-    border-color 0.25s ease,
-    box-shadow 0.25s ease,
-    background 0.25s ease,
-    transform 0.2s ease;
-}
-
-
-/* Placeholder */
-
-.form-group input::placeholder,
-.form-group textarea::placeholder {
-  color: #666;
-}
-
-
-/* Focus */
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-  border-color: #2196ff;
-
-  background: #0d1117;
-
-  box-shadow:
-    0 0 0 3px rgba(33, 150, 255, 0.12),
-    0 0 20px rgba(33, 150, 255, 0.08);
-
-  transform: translateY(-1px);
-}
-
-
-/* Hover */
-
-.form-group input:hover,
-.form-group select:hover,
-.form-group textarea:hover {
-  border-color: #3b3b3b;
-}
-
-
-/* =========================================
-   SELECT
-========================================= */
-
-.form-group select {
-  cursor: pointer;
-
-  appearance: none;
-
-  background-image:
-    linear-gradient(45deg, transparent 50%, #2196ff 50%),
-    linear-gradient(135deg, #2196ff 50%, transparent 50%);
-
-  background-position:
-    calc(100% - 20px) 19px,
-    calc(100% - 14px) 19px;
-
-  background-size:
-    6px 6px,
-    6px 6px;
-
-  background-repeat: no-repeat;
-
-  padding-right: 45px;
-}
-
-
-/* Select options */
-
-.form-group select option {
-  background: #111;
-
-  color: #fff;
-}
-
-
-/* =========================================
-   TEXTAREA
-========================================= */
-
-.form-group textarea {
-  resize: vertical;
-
-  min-height: 150px;
-
   line-height: 1.6;
 }
 
+.consultation-quick-contact a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 13px 18px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 999px;
+  box-sizing: border-box;
+  transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+}
 
-/* =========================================
-   FULL WIDTH
-========================================= */
+.consultation-quick-contact a:first-of-type {
+  background: #68734d;
+  color: #ffffff;
+}
 
-.full-width {
+.consultation-quick-contact a:first-of-type:hover {
+  background: #596440;
+  transform: translateY(-2px);
+}
+
+.consultation-quick-contact a:last-of-type {
+  background: #ffffff;
+  color: #68734d;
+  border: 1px solid #8f9877;
+}
+
+.consultation-quick-contact a:last-of-type:hover {
+  background: #68734d;
+  border-color: #68734d;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.consultation-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  padding: 40px 44px;
+  background: #ffffff;
+  border: 1px solid #d2ccb9;
+  border-radius: 16px;
+  box-shadow: 0 16px 48px rgba(70, 75, 55, 0.08);
+}
+
+.consultation-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.consultation-form .form-group label {
+  color: #68734d;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.consultation-form .form-group input,
+.consultation-form .form-group select,
+.consultation-form .form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: #f7f5ec;
+  color: #25271f;
+  border: 1px solid #d2ccb9;
+  border-radius: 10px;
+  padding: 14px 16px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.consultation-form .form-group input::placeholder,
+.consultation-form .form-group textarea::placeholder {
+  color: #8f9877;
+}
+
+.consultation-form .form-group input:focus,
+.consultation-form .form-group select:focus,
+.consultation-form .form-group textarea:focus {
+  border-color: #68734d;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(104, 115, 77, 0.12);
+}
+
+.consultation-form .form-group input:hover,
+.consultation-form .form-group select:hover,
+.consultation-form .form-group textarea:hover {
+  border-color: #a8b58a;
+}
+
+.consultation-form .form-group select {
+  cursor: pointer;
+  appearance: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, #68734d 50%),
+    linear-gradient(135deg, #68734d 50%, transparent 50%);
+  background-position:
+    calc(100% - 20px) 19px,
+    calc(100% - 14px) 19px;
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+  padding-right: 45px;
+}
+
+.consultation-form .form-group textarea {
+  resize: vertical;
+  min-height: 150px;
+  line-height: 1.6;
+}
+
+.consultation-form .full-width {
   grid-column: 1 / -1;
 }
 
-
-/* =========================================
-   SUBMIT BUTTON
-========================================= */
-
-.form-submit {
+.consultation-form .form-submit {
   grid-column: 1 / -1;
-
-  margin-top: 10px;
-
+  margin-top: 8px;
   display: flex;
-
   justify-content: center;
 }
 
-
-.form-submit button {
+.consultation-form .form-submit button {
   width: 100%;
-
-  max-width: 400px;
-
-  padding: 16px 25px;
-
+  max-width: 420px;
+  padding: 15px 28px;
   border: none;
-
-  border-radius: 10px;
-
-  background: #2196ff;
-
-  color: #fff;
-
-  font-size: 16px;
-
-  font-weight: 700;
-
+  border-radius: 999px;
+  background: #68734d;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
   cursor: pointer;
-
-  transition:
-    transform 0.25s ease,
-    background 0.25s ease,
-    box-shadow 0.25s ease;
+  box-shadow: 0 8px 24px rgba(104, 115, 77, 0.28);
+  transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
 }
 
-
-/* Button hover */
-
-.form-submit button:hover {
-  background: #1687ed;
-
-  transform: translateY(-3px);
-
-  box-shadow:
-    0 10px 30px rgba(33, 150, 255, 0.35);
+.consultation-form .form-submit button:hover {
+  background: #596440;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(104, 115, 77, 0.38);
 }
 
-
-/* Button click */
-
-.form-submit button:active {
+.consultation-form .form-submit button:active {
   transform: translateY(0);
 }
 
+@media (max-width: 1024px) {
+  .consultation-layout {
+    grid-template-columns: 1fr;
+  }
 
-/* =========================================
-   REQUIRED FIELD EFFECT
-========================================= */
-
-.form-group input:required:valid,
-.form-group select:required:valid {
-  border-color: #164d75;
+  .consultation-sidebar {
+    position: static;
+  }
 }
 
-
-/* =========================================
-   RESPONSIVE
-========================================= */
-
 @media (max-width: 768px) {
-
   .consultation-header {
-    padding: 70px 20px 45px;
+    padding-bottom: 60px;
   }
 
   .consultation-header h1 {
-    font-size: 42px;
+    font-size: 48px;
+  }
+
+  .consultation-body {
+    padding: 0 20px 80px;
   }
 
   .consultation-form {
     grid-template-columns: 1fr;
-
-    padding: 30px 22px;
-
-    gap: 20px;
+    padding: 28px 22px;
+    gap: 18px;
   }
 
-  .full-width,
-  .form-submit {
+  .consultation-sidebar {
+    padding: 28px 24px;
+  }
+
+  .consultation-form .full-width,
+  .consultation-form .form-submit {
     grid-column: auto;
   }
 
-  .form-submit button {
+  .consultation-form .form-submit button {
     max-width: none;
   }
-
 }
 
-
 @media (max-width: 480px) {
-
   .consultation-header h1 {
-    font-size: 34px;
+    font-size: 40px;
   }
 
   .consultation-header > p:last-child {
-    font-size: 15px;
+    font-size: 16px;
   }
-
-  .consultation-form {
-    padding: 25px 18px;
-  }
-
-  .form-group input,
-  .form-group select,
-  .form-group textarea {
-    padding: 13px 14px;
-  }
-
 }
+
 /* =========================================
    OLIVE GREEN INTERIOR DESIGN THEME
 ========================================= */
