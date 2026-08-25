@@ -51,7 +51,7 @@ function Contact() {
             </span>
 
             <a href="tel:+919999999999">
-              +91 9559590289
+              +91 8303359451
             </a>
 
           </div>
@@ -66,7 +66,7 @@ function Contact() {
             </span>
 
             <a
-              href="https://wa.me/919559590289"
+              href="https://wa.me/918303359451"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -84,8 +84,8 @@ function Contact() {
               EMAIL
             </span>
 
-            <a href="mailto:devsahani8090@gmail.com">
-              devsahani8090@gmail.com
+            <a href="mailto:dharamveer@vkfinteriors.com">
+              dharamveer@vkfinteriors.com
             </a>
 
           </div>
@@ -100,7 +100,8 @@ function Contact() {
             </span>
 
             <p>
-              Delhi NCR, India
+              #20, 9th cross Govindappa Layout Byrathi,
+              S.R Nagar Post Bangalore East - bangalore -560077
             </p>
 
           </div>
