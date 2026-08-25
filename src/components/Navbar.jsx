@@ -19,7 +19,7 @@ function Navbar() {
           className="navbar-logo"
           onClick={closeMenu}
         >
-          RAHUL INTERIORS
+          VKF INTERIOR
         </Link>
 
 
