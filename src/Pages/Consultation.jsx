@@ -93,11 +93,11 @@ function Consultation() {
               </p>
 
               <a href="tel:+919559590289">
-                Call +91 9559590289
+                Call +91 8303359451
               </a>
 
               <a
-                href="https://wa.me/919559590289"
+                href="https://wa.me/918303359451"
                 target="_blank"
                 rel="noopener noreferrer"
               >
