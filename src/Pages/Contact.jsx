@@ -3,14 +3,9 @@ import { Link } from "react-router-dom";
 function Contact() {
   return (
     <main className="contact-page">
-
       {/* HEADER */}
-
       <section className="contact-header inner-page-hero">
-
-        <p className="section-label">
-          CONTACT US
-        </p>
+        <p className="section-label">CONTACT US</p>
 
         <h1>
           Let's Create
@@ -20,119 +15,78 @@ function Contact() {
 
         <p>
           Have a question about your home interior?
+          <br />
           Get in touch with our design team.
         </p>
-
       </section>
 
-
       {/* CONTACT INFORMATION */}
-
       <section className="contact-content">
-
         <div className="contact-info">
-
-          <h2>
-            Get In Touch
-          </h2>
+          <h2>Get In Touch</h2>
 
           <p>
             We work on residential interiors including
             apartments, houses and complete homes.
           </p>
 
-
           {/* PHONE */}
-
           <div className="contact-item">
+            <span>PHONE</span>
 
-            <span>
-              PHONE
-            </span>
-
-            <a href="tel:+919999999999">
-              +91 8303359451
+            <a href="tel:+919572450663">
+              +91 9572450663
             </a>
-
           </div>
 
-
           {/* WHATSAPP */}
-
           <div className="contact-item">
-
-            <span>
-              WHATSAPP
-            </span>
+            <span>WHATSAPP</span>
 
             <a
-              href="https://wa.me/918303359451"
+              href="https://wa.me/919572450663"
               target="_blank"
               rel="noopener noreferrer"
             >
               Chat With Us
             </a>
-
           </div>
-
 
           {/* EMAIL */}
-
           <div className="contact-item">
+            <span>EMAIL</span>
 
-            <span>
-              EMAIL
-            </span>
-
-            <a href="mailto:dharamveer@vkfinteriors.com">
-              dharamveer@vkfinteriors.com
+            <a href="mailto:roshniroy186@gmail.com">
+              roshniroy186@gmail.com
             </a>
-
           </div>
-
 
           {/* LOCATION */}
-
           <div className="contact-item">
-
-            <span>
-              LOCATION
-            </span>
+            <span>LOCATION</span>
 
             <p>
-              #20, 9th cross Govindappa Layout Byrathi,
-              S.R Nagar Post Bangalore East - bangalore -560077
+              Block-C, Beta 1,
+              <br />
+              Greater Noida, Uttar Pradesh
             </p>
-
           </div>
 
-
           {/* WORKING HOURS */}
-
           <div className="contact-item">
-
-            <span>
-              WORKING HOURS
-            </span>
+            <span>WORKING HOURS</span>
 
             <p>
               Monday – Saturday
               <br />
               10:00 AM – 7:00 PM
             </p>
-
           </div>
-
         </div>
 
-
         {/* CONTACT CTA */}
-
         <div className="contact-cta">
-
-          <p className="section-label">
-            START YOUR PROJECT
-          </p>
+          <p className="section-label">START YOUR PROJECT</p>
 
           <h2>
             Tell Us About
@@ -150,11 +104,8 @@ function Contact() {
           <Link to="/consultation">
             Book Free Consultation →
           </Link>
-
         </div>
-
       </section>
-
     </main>
   );
 }
